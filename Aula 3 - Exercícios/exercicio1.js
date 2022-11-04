@@ -12,7 +12,6 @@ Classificação:
 let nota1 = 5;
 let nota2 = 10;
 let nota3 = 10;
-
 const media = ( nota1 + nota2 + nota3 ) / 3;
 
 if ( media < 5 ){
