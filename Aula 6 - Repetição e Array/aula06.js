@@ -5,7 +5,7 @@ const alunos = [
     'Marina'
 ];
 
-// add mais informações -> push
+// add mais informações ao final -> push
 alunos.push('Renan');
 
 // pode-se substituir um valor
