@@ -7,21 +7,21 @@
 }
 
 .pokemon {
-    padding: 1rem;
-    background-color: #77a899;
-    color: white;
-    border-radius: 1em;
-    margin: 0.7em;
-
     display: flex;
     flex-direction: column;
+    padding: 1rem;
+    margin: 0.7em;
+    border-radius: 1em;
+    background-color: rgb(29, 202, 145);
+    box-shadow: 0 0 45px rgba(59, 59, 59, 0.39);
+    color: #ffffff;
 }
 
 
 .pokemon .number {
-    color: rgba(0, 0, 0, 0.452);
+    color: rgba(0, 0, 0, 0.315);
     text-align: right;
-    font-size: 1em;
+    font-size: 1.2em;
 }
 
 .pokemon .name {
@@ -46,7 +46,7 @@
 
 .pokemon .types .type {
     color: #fff;
-    padding: .25rem .8rem;
+    padding: .25rem 1.3rem;
     margin: .5rem 0;
     font-size: 1rem;
     border-radius: 1rem;
