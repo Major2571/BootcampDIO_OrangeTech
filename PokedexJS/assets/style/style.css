@@ -3,26 +3,39 @@
     box-sizing: border-box;
 }
 
+html {
+    line-height: normal;
+}
+
 body {
-    background-color: #f6f8fc;
+    background-image: url(/assets/img/pokemons-bg.jpg);
+    backdrop-filter: blur(1px);
 }
 
 .content {
     padding: 1rem;
     width: 100%;
     height: 100%;
-    background-color: #fff;
+}
+
+.content h1 img {
+    width: 1em;
 }
 
 .content h1 {
+    align-items: center;
+    display: flex;
+    width: 100%;
     text-align: center;
+    justify-content: center;
+    font-size: 3em;
 }
 
 @media screen and (min-width: 995px) {
     .content {
         max-width: 80%;
         height: auto;
-        margin: 1rem auto;
+        margin: 0 auto;
         border-radius: 1rem;
     }
 }

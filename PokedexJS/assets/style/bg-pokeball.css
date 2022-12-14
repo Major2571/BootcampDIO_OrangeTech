@@ -3,11 +3,6 @@
     justify-content: flex-end;
 }
 
-.pokemon-card-container{
-    margin: 0.7em auto;
-    width: 100%;
-}
-
 .bg-pokeball {
     position: absolute;
     display: flex;
