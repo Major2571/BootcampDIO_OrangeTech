@@ -1,5 +1,9 @@
 const pokemonList = document.getElementById("pokemonList");
 
+function convertPokemonTypesToLi(pokemonTypes) {
+    return pokemonTypes.map((typeSlot) => `<li class="type">${typeSlot.type.name}</li>`);
+}
+
 function convertPokemonToLi(pokemon) {
   return `<div class="pokemon-card-container">
             <div class="pokemon-card">
@@ -8,18 +12,17 @@ function convertPokemonToLi(pokemon) {
                     <div class="bg-pokeball"></div>
                 </div>
 
-                <span class="number">#001</span>
+                <span class="number">#0${pokemon.order}</span>
 
                 <h2 class="name">${pokemon.name}</h2>
 
                 <div class="details">
 
                     <ol class="types">
-                        <li class="type">Grass</li>
-                        <li class="type">Poison</li>
+                        ${convertPokemonTypesToLi(pokemon.types).join('')}
                     </ol>
 
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/home/1.png" alt="${pokemon.name}">
+                    <img src="${pokemon.sprites.other.home.front_default}" alt="${pokemon.name}">
 
                 </div>
 
