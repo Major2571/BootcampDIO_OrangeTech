@@ -1,6 +1,7 @@
 * {
     font-family: 'Poppins', sans-serif;
     box-sizing: border-box;
+    user-select: none;
 }
 
 html {
@@ -10,6 +11,19 @@ html {
 body {
     background-image: url(/assets/img/pokemons-bg.jpg);
     backdrop-filter: blur(1px);
+}
+
+body::-webkit-scrollbar {
+    width: 15px;
+}
+
+body::-webkit-scrollbar-track {
+    background: rgba(187, 187, 187, 0.281);
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #7c7b7b62;
+    border-radius: 10px;
 }
 
 .content {
@@ -29,6 +43,28 @@ body {
     text-align: center;
     justify-content: center;
     font-size: 3em;
+}
+
+.loadMore {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+    width: 100%;
+}
+
+.loadMore button {
+    padding: 1em 3em;
+    border-radius: 10em;
+    border: none;
+    background-color: rgb(161, 19, 19);
+    cursor: pointer;
+    font-size: 1.25em;
+    color: #ffffff;
+}
+
+footer {
+    height: 5em;
 }
 
 @media screen and (min-width: 995px) {
