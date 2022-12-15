@@ -1,0 +1,73 @@
+#loader {
+    font-size: 1.2rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+}
+
+#loader::before {
+    content: '';
+    display: block;
+    height: 4em;
+    width: 4em;
+    border: 0.9em solid #FB6C6C;
+    border-radius: 100%;
+    margin-bottom: 2em;
+    clip-path: polygon(0 0, 0 40%, 50% 40%, 50% 60%, 0 60%, 0 100%, 100% 100%, 100% 60%, 50% 60%, 50% 40%, 100% 40%, 100% 0);
+    animation: spin .5s infinite ease-in-out;
+}
+
+#loader::after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -1.9em;
+    height: 2em;
+    width: 2em;
+    background-color: #CCC;
+    border-radius: 100%;
+}
+
+
+
+/* Add animation to "page content" */
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+
+    to {
+        bottom: 0;
+        opacity: 1
+    }
+}
+
+#myDiv {
+    display: none;
+    text-align: center;
+}
