@@ -6,5 +6,5 @@ function functionTime() {
 
 function showPage() {
     document.getElementById("loader").style.display = "none";
-    document.getElementById("myDiv").style.display = "block";
+    document.getElementById("divBottom").style.display = "block";
 }

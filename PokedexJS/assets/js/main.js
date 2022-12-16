@@ -25,13 +25,13 @@ function loadPokemonItens(offset, limit) {
                     </div>
     
                 </div>
-             </div> `;
+             </div>`;
     }
-
+    
+    
     pokeApi.getPokemons(offset, limit).then((pokemons = []) => {
         pokemonList.innerHTML += pokemons.map(convertPokemonToLi).join('');
     });
-
 }
 
 loadPokemonItens(offset, limit);
